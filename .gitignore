@@ -3,8 +3,10 @@
 # dependencies
 node_modules/
 
-*.claude/
-*.vscode/
+# editor and assistant settings (local to each machine)
+.claude/
+.vscode/
+.idea/
 
 # Expo
 .expo/
@@ -33,8 +35,11 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# local env files and secrets
+.env
 .env*.local
+credentials.json
+*.keystore
 
 # typescript
 *.tsbuildinfo
